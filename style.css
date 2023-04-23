@@ -9,6 +9,8 @@ body{
 
 /* header-top */
 .header-top{
+    position: absolute;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -54,4 +56,65 @@ body{
     font-size: 19px;
     font-weight: bold;
     color: white;
+}
+
+/* header */
+.header{
+    margin-top: 160px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.header-box-1{
+    display: flex;
+    flex-direction: column;
+    max-width: 510px;
+}
+.slogan{
+    padding: 10px 20px 10px 20px;
+    max-width: 220px;
+    border-radius: 100px;
+    background-color: #FFF0DC;
+    color: #FB9333;
+    font-size: 1em;
+    font-weight: bolder;
+    margin-bottom: 25px;
+}
+.header-box-1 span{
+    color: #FB9333;
+}
+.header-box-1 h1{
+    font-weight: 800;
+    color: #575757;
+    font-size: 4em;
+}
+.header-box-1 p{
+    color: #828282;
+    width: 80%;
+    font-size: 1em;
+}
+.header-box-1 a{
+    margin: 20px 0 30px 0;
+}
+.header-box-1 a button{
+    border: none;
+    border-radius: 100px;
+    background-color: #FB9333;
+    padding: 14px 30px 14px 30px;
+    font-size: 0.7em;
+    color: white;
+}
+.header-box-1 img{
+    max-width: 300px;
+    width: 100%;
+}
+.header-box-2 img{
+    max-width: 600px;
+}
+.pattern img{
+    position: absolute;
+    z-index: -100;
+    top: 0;
+    width: 100%;
+    height: 100%;
 }
