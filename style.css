@@ -9,8 +9,8 @@ body{
 
 /* header-top */
 .header-top{
-    position: absolute;
-    top: 0;
+    /* position: absolute;
+    top: 0; */
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -69,9 +69,9 @@ body{
 
 /* header */
 .header{
-    margin-top: 160px;
+    margin-top: 50px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 .header-box-1{
@@ -283,7 +283,7 @@ body{
 .card-1, .card-2, .card-3{
     margin: 80px 10px 0 10px;
     width: 350px;
-    min-height: 500px;
+    height: 450px;
     border-radius: 50px;
 }
 .card-1{
@@ -412,10 +412,30 @@ body{
     .header-box-2{
         max-width: 6;
     }
+    .header-box-1 h1{
+        font-size: 2.2em;
+    }
+    .header-box-2 img{
+        width: 350px;
+    }
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
+    .header-top{
+        padding: 0 50px;
+        justify-content: space-between;
+    }
+    .nav-item{
+        padding: 0;
+    }
+    .footer-nav{
+        margin: 0;
+    }
+    .nav-link, .nav-item{
+        margin: 8px 0 8px 0;
+    }
+}
+@media (max-width: 800px) {
     .header{
-        margin-top: 320px;
         flex-direction: column;
     }
     .header-box-1{
@@ -449,12 +469,6 @@ body{
     .wrapper-card-box-2{
         flex-direction: column;
         max-width: 100%;
-    }
-    .nav-link, .nav-item{
-        margin: 8px 0 8px 0;
-    }
-    .nav-item{
-        padding: 0;
     }
 }
 @media (max-width: 751px) {
@@ -498,13 +512,10 @@ body{
         max-width: 80%;
     }
     .card-1, .card-2, .card-3{
-        max-width: 300px;
+        max-width: 280px;
         height: 400px;
         background-size: contain;
         background-repeat: no-repeat;
-    }
-    .card-txt-2{
-        bottom: 70px;
     }
 }
 @media (max-width: 425px) {
